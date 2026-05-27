@@ -1,0 +1,98 @@
+name: Post changelog diff to Discord
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'CHANGELOG.md'
+      - 'changelog.md'
+  workflow_dispatch:
+
+jobs:
+  discord-changelog:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Determine changelog file
+        id: file
+        run: |
+          if [ -f CHANGELOG.md ]; then
+            echo "path=CHANGELOG.md" >> "$GITHUB_OUTPUT"
+          elif [ -f changelog.md ]; then
+            echo "path=changelog.md" >> "$GITHUB_OUTPUT"
+          else
+            echo "No changelog file found"
+            exit 1
+          fi
+
+      - name: Extract added lines from diff
+        id: diff
+        shell: bash
+        run: |
+          FILE="${{ steps.file.outputs.path }}"
+
+          BEFORE="${{ github.event.before }}"
+          AFTER="${{ github.sha }}"
+
+          if [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+            BEFORE="$(git rev-parse "${AFTER}^" 2>/dev/null || true)"
+          fi
+
+          if [ -z "$BEFORE" ]; then
+            echo "Could not determine previous commit"
+            exit 1
+          fi
+
+          DIFF=$(git diff --unified=0 "$BEFORE" "$AFTER" -- "$FILE" \
+            | grep -E '^\+[^+]' \
+            | sed 's/^\+//' \
+            | sed '/^[[:space:]]*$/d' \
+            || true)
+
+          if [ -z "$DIFF" ]; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          DIFF_TRUNCATED=$(printf '%s\n' "$DIFF" | head -c 3500)
+
+          {
+            echo "has_changes=true"
+            echo "content<<EOF"
+            printf '%s\n' "$DIFF_TRUNCATED"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Post to Discord
+        if: steps.diff.outputs.has_changes == 'true'
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          REPO: ${{ github.repository }}
+          REF_NAME: ${{ github.ref_name }}
+          COMMIT_URL: ${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}
+        shell: bash
+        run: |
+          BODY=$(jq -n \
+            --arg content "Changelog updated in $REPO on branch $REF_NAME" \
+            --arg diff "${{ steps.diff.outputs.content }}" \
+            --arg url "$COMMIT_URL" \
+            '{
+              content: $content,
+              embeds: [
+                {
+                  title: "CHANGELOG diff",
+                  description: ("```diff\n" + $diff + "\n```"),
+                  url: $url
+                }
+              ]
+            }')
+
+          curl -sS -X POST "$DISCORD_WEBHOOK_URL" \
+            -H "Content-Type: application/json" \
+            -d "$BODY"
