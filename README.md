@@ -9,7 +9,7 @@ These are the Competitive Conquest 5v5 Maps used in the Hellenic Battlefield Lea
 | Liberation Peak | MP_Capstone | 3.0 | zmu3k |
 | Manhattan Bridge | MP_Dumbo | 1.1 | zmu4y |
 | Operation FireStorm | MP_FireStorm | 2.1 | zmu42 |
-| Redline Storage | MP_Granite_MilitaryStorage_Portal | 5.1.0 | zqf6r |
+| Redline Storage | MP_Granite_MilitaryStorage_Portal | 1.0 | zqf6r |
 | Mirak Valley | MP_Tungsten | 2.3 | zmu43 |
 
 
