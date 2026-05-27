@@ -10,6 +10,6 @@ Moved B flag into a contruction site.
 
 Small changes to B flag spawns. Blocked hole under flag C.
 
-### MP_Dumbo ver. 1.1
+### MP_Dumbo ver. 1.2
 
 Changes to spanws for flags B and C.
