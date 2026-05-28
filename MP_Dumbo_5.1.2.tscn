@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://pg3hflpgyfb3"]
+[gd_scene load_steps=21 format=3 uid="uid://pg3hflpgyfb3"]
 
 [ext_resource type="PackedScene" path="res://objects/Gameplay/Common/HQ_PlayerSpawner.tscn" id="1_s4vcd"]
 [ext_resource type="PackedScene" path="res://objects/entities/SpawnPoint.tscn" id="2_aquu2"]
@@ -19,6 +19,7 @@
 [ext_resource type="PackedScene" path="res://objects/uncategorized/GMetroBus_01_Brooklyn.tscn" id="17_iyw1l"]
 [ext_resource type="PackedScene" path="res://objects/props/BarrierBlockConcrete_01_256x180_A.tscn" id="18_x2oq0"]
 [ext_resource type="PackedScene" path="res://objects/props/BarrierStoneBlock_01_F.tscn" id="19_jrpuw"]
+[ext_resource type="PackedScene" path="res://objects/props/BarrierStoneBlock_01_C.tscn" id="20_7eokr"]
 
 [node name="MP_Dumbo" type="Node3D"]
 
@@ -1280,3 +1281,6 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -21.89
 
 [node name="BarrierStoneBlock_01_F2" parent="AddedAssets" instance=ExtResource("19_jrpuw")]
 transform = Transform3D(-4.37114e-08, 0.0283578, -0.999598, 0, 0.999598, 0.0283578, 1, 1.23956e-09, -4.36938e-08, -60.682, 0.815899, 17.0838)
+
+[node name="BarrierStoneBlock_01_C" parent="." instance=ExtResource("20_7eokr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51.1443, 56.0429, -239.397)
