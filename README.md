@@ -12,4 +12,8 @@ These are the Competitive Conquest 5v5 Maps used in the Hellenic Battlefield Lea
 | Redline Storage | MP_Granite_MilitaryStorage_Portal | 1.0 | zqf6r |
 | Mirak Valley | MP_Tungsten | 2.3 | zmu43 |
 
+And these are not yet used.
 
+| Map Name | Machine Name | Current Version | Experience Code |
+| --- | --- | --- | --- |
+| Hagental Base | MP_Subsurface | 1.0 | 1xz8v |
