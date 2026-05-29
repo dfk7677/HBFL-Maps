@@ -23,3 +23,9 @@ Initial design.
 ### MP_Dumbo ver. 1.2.1
 
 Closed small hole next to container in flag B.
+
+## 29/05/26
+
+### MP_Dumbo ver. 1.2.2
+
+Closed top of hole next to container in flag B.

@@ -1284,3 +1284,6 @@ transform = Transform3D(-4.37114e-08, 0.0283578, -0.999598, 0, 0.999598, 0.02835
 
 [node name="BarrierStoneBlock_01_C" parent="." instance=ExtResource("20_7eokr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51.1443, 56.0429, -239.397)
+
+[node name="BarrierStoneBlock_01_C2" parent="." instance=ExtResource("20_7eokr")]
+transform = Transform3D(-4.12369e-08, -0.943391, -0.331684, 1, -4.37114e-08, 0, -1.44984e-08, -0.331684, 0.943391, -48.4541, 60.2117, -238.411)
