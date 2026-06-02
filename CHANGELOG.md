@@ -29,3 +29,13 @@ Closed small hole next to container in flag B.
 ### MP_Dumbo ver. 1.2.2
 
 Closed top of hole next to container in flag B.
+
+## 02/06/26
+
+### MP_Subsurface ver. 1.0.1
+
+Changed flag B cap area to not include underground tunnel.
+
+### MP_Tungsten ver. 3.0.0
+
+Complete overhaul of the map.
