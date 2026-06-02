@@ -17,3 +17,4 @@ And these are not yet used.
 | Map Name | Machine Name | Current Version | Experience Code |
 | --- | --- | --- | --- |
 | Hagental Base | MP_Subsurface | 1.0 | 1xz8v |
+| Mirak Valley | MP_Tungsten | 3.0 | 1xh4w |
