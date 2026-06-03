@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dh5um8sd7rmjj"]
+[gd_scene load_steps=19 format=3 uid="uid://ccmd7svlutcn5"]
 
 [ext_resource type="PackedScene" path="res://objects/Gameplay/Common/HQ_PlayerSpawner.tscn" id="1_j8i3f"]
 [ext_resource type="PackedScene" uid="uid://jv31so3xcr7p" path="res://addons/bf_portal/portal_tools/types/PolygonVolume/PolygonVolume.tscn" id="2_kl0v6"]
@@ -30,7 +30,7 @@ InfantrySpawns = [NodePath("SpawnPoint_1_1"), NodePath("SpawnPoint_1_2"), NodePa
 
 [node name="HQ_Team1" parent="TEAM_1_HQ" instance=ExtResource("2_kl0v6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.084, 0, -14.751)
-points = PackedVector2Array(110.768, 48.9642, 115.401, -32.2852, -55.822, -46.8028, -57.4539, 5.21025, -10.8801, 76.4872, 45.9096, 64.5315)
+points = PackedVector2Array(110.768, 48.9642, 115.48, -32.2813, -56.0473, -47.221, -57.4539, 5.21025, -10.8801, 76.4872, 45.9096, 64.5315)
 
 [node name="SpawnPoint_1_1" parent="TEAM_1_HQ" instance=ExtResource("3_ybyuu")]
 transform = Transform3D(-0.857177, 0, 0.515024, 0, 1, 0, -0.515024, 0, -0.857177, 20.1678, -2.98107, -8.56089)
@@ -341,11 +341,11 @@ transform = Transform3D(8, 0, 0, 0, 0.01, 0, 0, 0, 8, -200.578, 87.8281, -245.50
 [node name="BarrierStoneBlock_01_A5" parent="." instance=ExtResource("21_ybyuu")]
 transform = Transform3D(8, 0, 0, 0, 0.01, 0, 0, 0, 8, -196.718, 87.8281, -245.506)
 
-[node name="BarrierStoneBlock_01_A16" parent="." instance=ExtResource("21_ybyuu")]
-transform = Transform3D(7.92214, 0, 1.11338, 0, 0.01, 0, -1.11338, 0, 7.92214, -315.336, 89.4451, -231.729)
-
 [node name="BarrierStoneBlock_01_A17" parent="." instance=ExtResource("21_ybyuu")]
-transform = Transform3D(7.92214, 0, 1.11338, 0, 0.01, 0, -1.11338, 0, 7.92214, -315.945, 89.4451, -235.389)
+transform = Transform3D(4.95134, 0, 0.695863, 0, 0.01, 0, -0.695863, 0, 4.95134, -317.968, 89.4451, -236.938)
+
+[node name="BarrierStoneBlock_01_A18" parent="." instance=ExtResource("21_ybyuu")]
+transform = Transform3D(4.95134, 0, 0.695863, 0, 0.01, 0, -0.695863, 0, 4.95134, -314.352, 89.4451, -237.541)
 
 [node name="BarrierStoneBlock_01_A6" parent="." instance=ExtResource("21_ybyuu")]
 transform = Transform3D(8, 0, 0, 0, 0.01, 0, 0, 0, 8, -249.597, 87.8281, -283.044)
@@ -363,10 +363,10 @@ transform = Transform3D(7.95618, 0, -0.836228, 0, 0.01, 0, 0.836228, 0, 7.95618,
 transform = Transform3D(8, 0, 0, 0, 0.01, 0, 0, 0, 8, -249.322, 87.5701, -303.053)
 
 [node name="BarrierStoneBlock_01_A14" parent="." instance=ExtResource("21_ybyuu")]
-transform = Transform3D(7.8331, 0, 1.62558, 0, 0.01, 0, -1.62558, 0, 7.8331, -279.482, 87.3246, -308.222)
+transform = Transform3D(4.89569, 0, 1.01599, 0, 0.01, 0, -1.01599, 0, 4.89569, -280.305, 87.3246, -309.994)
 
 [node name="BarrierStoneBlock_01_A15" parent="." instance=ExtResource("21_ybyuu")]
-transform = Transform3D(7.8331, 0, 1.62558, 0, 0.01, 0, -1.62558, 0, 7.8331, -275.842, 87.3246, -308.876)
+transform = Transform3D(4.89569, 0, 1.01599, 0, 0.01, 0, -1.01599, 0, 4.89569, -274.323, 87.3246, -311.185)
 
 [node name="BarrierStoneBlock_01_A9" parent="." instance=ExtResource("21_ybyuu")]
 transform = Transform3D(8, 0, 0, 0, 0.01, 0, 0, 0, 8, -243.675, 87.5701, -303.053)

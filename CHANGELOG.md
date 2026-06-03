@@ -39,3 +39,9 @@ Changed flag B cap area to not include underground tunnel.
 ### MP_Tungsten ver. 3.0.0
 
 Complete overhaul of the map.
+
+## 03/06/26
+
+### MP_Tungsten ver. 3.0.1
+
+Small changes to blocked roofs.
