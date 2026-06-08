@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://baw8bsg7sndp7"]
+[gd_scene load_steps=29 format=3 uid="uid://baw8bsg7sndp7"]
 
 [ext_resource type="PackedScene" path="res://objects/Gameplay/Common/CombatArea.tscn" id="1_idp2f"]
 [ext_resource type="PackedScene" uid="uid://jv31so3xcr7p" path="res://addons/bf_portal/portal_tools/types/PolygonVolume/PolygonVolume.tscn" id="2_h43fn"]
@@ -27,6 +27,7 @@
 [ext_resource type="PackedScene" path="res://objects/props/BarrierConstruction_01_256_120_B.tscn" id="24_kfgeu"]
 [ext_resource type="PackedScene" path="res://objects/props/Container_02_Open_F.tscn" id="25_cgn4n"]
 [ext_resource type="PackedScene" path="res://objects/architecture/ConstructionSite_02_B.tscn" id="26_h43fn"]
+[ext_resource type="PackedScene" path="res://objects/props/DumpTruck_01.tscn" id="28_ydkbm"]
 
 [node name="MP_FireStorm" type="Node3D"]
 
@@ -497,6 +498,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52.8977, 124.756, -84.282)
 [node name="Container_02_Closed_DD_ProxyRadiosity9" parent="AddedAssets" instance=ExtResource("17_bgm2d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.4091, 124.756, -74.7792)
 
+[node name="Container_02_Closed_DD_ProxyRadiosity10" parent="AddedAssets" instance=ExtResource("17_bgm2d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.9318, 124.343, -74.7792)
+
+[node name="Container_02_Closed_DD_ProxyRadiosity12" parent="AddedAssets" instance=ExtResource("17_bgm2d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.4393, 124.343, -117.002)
+
+[node name="Container_02_Closed_DD_ProxyRadiosity11" parent="AddedAssets" instance=ExtResource("17_bgm2d")]
+transform = Transform3D(1, 0, 0, 0, 0.998441, 0.0558215, 0, -0.0558215, 0.998441, -49.5823, 124.343, -125.752)
+
 [node name="ConstructionSite_02_B" parent="AddedAssets" instance=ExtResource("26_h43fn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.0999, 121.139, 11.6809)
 
@@ -553,3 +563,6 @@ Area = NodePath("../PolygonVolume")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.0591, 125.965, 11.8329)
 points = PackedVector2Array(-1.95893, -6.36438, -7.86198, -6.23629, -7.9309, 5.89338, 8.33389, 6.10014, 8.33389, -6.51196, 2.03835, -6.36438, 2.03835, -8.2941, -2.02785, -8.2941)
 height = 10.0
+
+[node name="DumpTruck_01" parent="." instance=ExtResource("28_ydkbm")]
+transform = Transform3D(-0.0247575, 0.0943168, -0.995234, 0.00234551, 0.995542, 0.0942877, 0.999691, 2.08367e-10, -0.0248684, -38.3262, 123.799, -74.1407)

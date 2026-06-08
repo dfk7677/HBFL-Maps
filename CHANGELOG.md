@@ -51,3 +51,7 @@ Small changes to blocked roofs.
 ### MP_Tungsten ver. 3.0.2
 
 Fixed HQ spaws. Added cover in NATO HQ. Fixed wrong height for a ceiling. Fixed flag B NATO deploy point unavailable.
+
+### MP_Firestorm ver. 3.0.1
+
+Added more cover in PAX HQ.
