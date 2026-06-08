@@ -45,3 +45,9 @@ Complete overhaul of the map.
 ### MP_Tungsten ver. 3.0.1
 
 Small changes to blocked roofs.
+
+## 08/06/26
+
+### MP_Tungsten ver. 3.0.2
+
+Fixed HQ spaws. Added cover in NATO HQ. Fixed wrong height for a ceiling. Fixed flag B NATO deploy point unavailable.
