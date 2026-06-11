@@ -56,6 +56,8 @@ Fixed HQ spaws. Added cover in NATO HQ. Fixed wrong height for a ceiling. Fixed 
 
 Added more cover in PAX HQ.
 
+## 11/06/26
+
 ### All Maps
 
 Added versioning object. All maps bumped one minor version.
