@@ -61,3 +61,13 @@ Added more cover in PAX HQ.
 ### All Maps
 
 Added versioning object. All maps bumped one minor version.
+
+## 27/08/26
+
+### All maps
+
+Added ruleset object. Normalization of capture areas. All maps bumped one minor version.
+
+### mp_plaza ver. 1.0.0
+
+First version
