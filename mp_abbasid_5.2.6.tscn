@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://3hvpbglts2bi" path="res://scripts/gameplay/common/WorldIcon.gd" id="8_1oks7"]
 [ext_resource type="PackedScene" path="res://objects/Gameplay/Common/WorldIcon.tscn" id="9_h2mfr"]
 [ext_resource type="PackedScene" path="res://static/MP_Abbasid_Terrain.tscn" id="11_2jce2"]
+[ext_resource type="Texture2D" uid="uid://brh137ep43ajx" path="res://addons/bf_portal/terrain_decal/textures/MP_Abbasid.jpg" id="12_dhsm4"]
 [ext_resource type="PackedScene" path="res://static/MP_Abbasid_Assets.tscn" id="12_gcmgk"]
 [ext_resource type="PackedScene" path="res://objects/Gameplay/Common/DeployCam.tscn" id="13_acavt"]
 [ext_resource type="PackedScene" path="res://objects/entities/CapturePoint.tscn" id="14_23up6"]
@@ -172,6 +173,12 @@ metadata/_edit_lock_ = true
 
 [node name="MP_Abbasid_Assets" parent="Static" unique_id=1379611037 instance=ExtResource("12_gcmgk")]
 metadata/_edit_lock_ = true
+
+[node name="MP_Abbasid_Decal" type="Decal" parent="Static" unique_id=1274386249]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -84.70479, 200, 122.950676)
+size = Vector3(1085.4724, 500, 1085.4724)
+texture_albedo = ExtResource("12_dhsm4")
+upper_fade = 0.0
 
 [node name="CapturePointA" parent="." unique_id=1859277894 node_paths=PackedStringArray("CaptureArea", "InfantrySpawnPoints_Team1", "InfantrySpawnPoints_Team2") instance=ExtResource("14_23up6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -174.942, 64.8107, -26.5188)

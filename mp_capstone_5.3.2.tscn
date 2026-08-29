@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" path="res://static/MP_Capstone_Terrain.tscn" id="1_pa8lt"]
 [ext_resource type="PackedScene" path="res://static/MP_Capstone_Assets.tscn" id="2_d6j76"]
+[ext_resource type="Texture2D" uid="uid://chax73cbgdw8b" path="res://addons/bf_portal/terrain_decal/textures/MP_Capstone.jpg" id="3_0hfbi"]
 [ext_resource type="PackedScene" path="res://objects/Gameplay/Common/HQ_PlayerSpawner.tscn" id="3_jrfs2"]
 [ext_resource type="PackedScene" uid="uid://jv31so3xcr7p" path="res://addons/bf_portal/portal_tools/types/PolygonVolume/PolygonVolume.tscn" id="4_vy8xj"]
 [ext_resource type="PackedScene" path="res://objects/props/FlagPole_01_USA.tscn" id="5_hb21s"]
@@ -32,6 +33,12 @@ metadata/_edit_lock_ = true
 
 [node name="MP_Capstone_Assets" parent="Static" unique_id=638924734 instance=ExtResource("2_d6j76")]
 metadata/_edit_lock_ = true
+
+[node name="MP_Capstone_Decal" type="Decal" parent="Static" unique_id=1083209]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69, 200, -100)
+size = Vector3(1538, 500, 1538)
+texture_albedo = ExtResource("3_0hfbi")
+upper_fade = 0.0
 
 [node name="NATO_HQ" parent="." unique_id=1583331907 node_paths=PackedStringArray("HQArea", "InfantrySpawns") instance=ExtResource("3_jrfs2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.4351, 134.639, 91.7063)
