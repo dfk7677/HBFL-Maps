@@ -71,3 +71,13 @@ Added ruleset object. Normalization of capture areas. All maps bumped one minor 
 ### mp_plaza ver. 1.0.0
 
 First version
+
+## 22/10/26
+
+### mp_plaza ver 1.1.0
+
+Restricted roof above flag.
+
+### mp_dumbo ver 1.3.1
+
+Fixed deploy point unavailable for PAX C spawns.

@@ -203,11 +203,12 @@ transform = Transform3D(-0.992497, 0, -0.122268, 0, 1, 0, 0.122268, 0, -0.992497
 [node name="SpawnPoint5" parent="CapturePointC/Spawns/PAX" unique_id=299091466 instance=ExtResource("3_qucea")]
 transform = Transform3D(-0.884483, 0, -0.466572, 0, 1, 0, 0.466572, 0, -0.884483, 45.5133, 0.26609, 21.0353)
 
-[node name="NATO_HQ" parent="." unique_id=1058876407 node_paths=PackedStringArray("HQArea", "InfantrySpawns") instance=ExtResource("7_umeny")]
+[node name="NATO_HQ" parent="." unique_id=1058876407 node_paths=PackedStringArray("HQArea", "HQProtectionAreaVolume", "InfantrySpawns") instance=ExtResource("7_umeny")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -219.8831, 130.4086, -28.651897)
 AltTeam = 0
 ObjId = 101
 HQArea = NodePath("HQ_Area")
+HQProtectionAreaVolume = NodePath("ProtectionArea")
 InfantrySpawns = [NodePath("Spawns/SpawnPoint"), NodePath("Spawns/SpawnPoint2"), NodePath("Spawns/SpawnPoint3")]
 
 [node name="InteractArea" parent="NATO_HQ" unique_id=1045546676 instance=ExtResource("8_wnk0q")]
@@ -251,6 +252,10 @@ iconColor = [0.0, 0.0, 1.0]
 iconImagePicker = 7
 iconTeamOwnerId = 1
 
+[node name="ProtectionArea" parent="NATO_HQ" unique_id=1745153848 instance=ExtResource("2_ase1r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.436905, 2.674347, -13.118401)
+points = PackedVector2Array(17.128, -90.048, -42.0934, -58.5887, -55.1322, -7.4907, -29.407, 64.7514, 56.362, 110.653, 6.057, 46.408, -3.288, -13.656, -0.797, -52.028)
+
 [node name="HQ_Area" parent="NATO_HQ" unique_id=1209994742 instance=ExtResource("2_ase1r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4369, 2.67435, -13.1184)
 points = PackedVector2Array(27.1277, -90.0483, -42.0934, -58.5887, -55.1322, -7.4907, -29.407, 64.7514, 66.3622, 110.653, 16.0573, 46.408, 7.28803, -13.6563, 9.79723, -52.0279)
@@ -266,12 +271,13 @@ transform = Transform3D(0.37059, 0, 0.928797, 0, 1, 0, -0.928797, 0, 0.37059, 2.
 [node name="SpawnPoint3" parent="NATO_HQ/Spawns" unique_id=1178667922 instance=ExtResource("3_qucea")]
 transform = Transform3D(-0.594767, 0, 0.803899, 0, 1, 0, -0.803899, 0, -0.594767, -9.7009, 1.66576, -33.2488)
 
-[node name="PAX_HQ" parent="." unique_id=894833083 node_paths=PackedStringArray("HQArea", "InfantrySpawns") instance=ExtResource("7_umeny")]
+[node name="PAX_HQ" parent="." unique_id=894833083 node_paths=PackedStringArray("HQArea", "HQProtectionAreaVolume", "InfantrySpawns") instance=ExtResource("7_umeny")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.180397, 121.8064, -65.9265)
 Team = 2
 AltTeam = 0
 ObjId = 102
 HQArea = NodePath("HQ_Area")
+HQProtectionAreaVolume = NodePath("ProtectionArea")
 InfantrySpawns = [NodePath("Spawns/SpawnPoint"), NodePath("Spawns/SpawnPoint2"), NodePath("Spawns/SpawnPoint3")]
 
 [node name="InteractArea" parent="PAX_HQ" unique_id=1697257732 instance=ExtResource("8_wnk0q")]
@@ -314,6 +320,10 @@ iconTeamOwnerId = 2
 [node name="HQ_Area" parent="PAX_HQ" unique_id=488710172 instance=ExtResource("2_ase1r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.6032, 0, 19.9776)
 points = PackedVector2Array(46.6391, 16.1515, 16.3326, -74.4154, -39.3788, -105.652, -10.2198, -7.25681, -0.00554752, 63.0215, -13.3675, 108.151)
+
+[node name="ProtectionArea" parent="PAX_HQ" unique_id=1157366722 instance=ExtResource("2_ase1r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.6032, 0, 19.9776)
+points = PackedVector2Array(46.6391, 16.1515, 16.3326, -74.4154, -29.379, -105.652, -0.22, -7.257, 10, 63.021, -3.368, 108.151)
 
 [node name="Spawns" type="Node3D" parent="PAX_HQ" unique_id=1386089446]
 

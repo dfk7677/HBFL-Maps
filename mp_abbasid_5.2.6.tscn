@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" path="res://objects/props/BarrierStoneBlock_01_H.tscn" id="20_gp7t6"]
 [ext_resource type="PackedScene" path="res://objects/uncategorized/GCarSUV_01.tscn" id="21_tnark"]
 [ext_resource type="PackedScene" path="res://objects/uncategorized/GCarSedan_02.tscn" id="22_ontwc"]
+[ext_resource type="PackedScene" path="res://objects/gameplay/common/FixedCamera.tscn" id="23_iijat"]
 
 [node name="MP_Abbasid" type="Node3D" unique_id=911124317]
 
@@ -719,3 +720,7 @@ ObjId = 1002
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -91.6011, 150.747, 3.86193)
 
 [node name="DeployCam" parent="Camera3D" unique_id=1275290209 instance=ExtResource("13_acavt")]
+
+[node name="FixedCamera" parent="." unique_id=1152693116 instance=ExtResource("23_iijat")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -223.11702, 67.70628, 49.26992)
+ObjId = 11001

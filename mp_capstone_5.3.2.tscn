@@ -482,7 +482,6 @@ points = PackedVector2Array(-5.45017, -5.54298, -7.51999, 0.175453, 2.02145, 6.2
 height = 5.0
 
 [node name="AddedAssets" type="Node3D" parent="." unique_id=756930908]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 1, 1)
 
 [node name="BarrierStoneBlock_01_E" parent="AddedAssets" unique_id=912981069 instance=ExtResource("14_0k2b7")]
 transform = Transform3D(0.551719, 0, 0.83403, 0, 1, 0, -0.83403, 0, 0.551719, 172.744, 134.211, 99.007)
