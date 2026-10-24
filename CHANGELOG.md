@@ -81,3 +81,9 @@ Restricted roof above flag.
 ### mp_dumbo ver 1.3.1
 
 Fixed deploy point unavailable for PAX C spawns.
+
+## 24/10/26
+
+### mp_isolated & mp_atoll ver 1.0.0
+
+First version of Tsuru Reef & Wake Island.
